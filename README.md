@@ -1,4 +1,5 @@
-# Wordpress Checklist
+![](https://img.shields.io/badge/style-Welcome-blue.svg?style=for-the-badge&label=Pull%20Requests) ![](https://img.shields.io/badge/style-Aftar%20Fadilah-blue.svg?logo=github&style=for-the-badge&label=Author) ![alt text](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png "WTFPL License")
+# Wordpress Checklist 
 My Personal Wordpress Theme Development Checklist
 
 # Table of Content

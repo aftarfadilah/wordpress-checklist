@@ -2,37 +2,37 @@
 My Personal Wordpress Theme Development Checklist
 
 # Table of Content
-- [Head](#head)
-- [Function](#function)
-- ~~[Body]()~~ *Coming Soon*
-- ~~[Footer]()~~ *Coming Soon*
-- ~~[Plug-ins]()~~ *Coming Soon*
+1. [Head](#head)
+2. [Function](#function)
+3. ~~[Body]()~~ *Coming Soon*
+4. ~~[Footer]()~~ *Coming Soon*
+5. ~~[Plug-ins]()~~ *Coming Soon*
 
 # Head
-[ ] **DOCTYPE:** ![High](img/high-label.svg?raw=true "Preview") Reference the browser to use HTML5
-```
+[ ] **DOCTYPE:** ![alt text](img/high-label.svg "High") Reference the browser to use HTML5
+```html
 <!doctype html> <!-- HTML5 -->
 ```
 
-[ ] **Charset:** ![High](img/high-label.svg?raw=true "Preview") Declare charset. Reccomended charset: UTF-8
-```
+[ ] **Charset:** ![alt text](img/high-label.svg "High") Declare charset. Reccomended charset: UTF-8
+```html
 <meta charset="utf-8">
 ```
 
-[ ] **Viewport:** ![High](img/high-label.svg?raw=true "Preview") Declare viewport and responsive support
-```
+[ ] **Viewport:** ![alt text](img/high-label.svg "High") Declare viewport and responsive support
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 ```
 
 # Function
-[ ] **title-tag:** ![High](img/high-label.svg?raw=true "Preview") Theme support function to add `<title>` in `wp_head()`
-```
+[ ] **title-tag:** ![alt text](img/high-label.svg "High") Theme support function to add `<title>` in `wp_head()`
+```php
 add_theme_support( 'title-tag' );
 ```
-> book https://codex.wordpress.org/Title_Tag
+> - :book: https://codex.wordpress.org/Title_Tag
 
-[ ] **featured-thumbnail:** ![Medium](img/medium-label.svg?raw=true "Preview") Theme support function to add post thumbnail
-```
+[ ] **featured-thumbnail:** ![alt text](img/medium-label.svg "Medium") Theme support function to add post thumbnail
+```php
 add_theme_support( 'post-thumbnails' ); 
 ```
-> book https://codex.wordpress.org/Post_Thumbnails
+> - :book: https://codex.wordpress.org/Post_Thumbnails

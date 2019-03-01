@@ -25,6 +25,12 @@ My Personal Wordpress Theme Development Checklist
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 ```
 
+- [ ] **WP Head:** ![alt text](img/high-label.svg "High") This is important to be included immidiately before `</head>`
+```php
+wp_head();
+```
+> * :book: https://codex.wordpress.org/Function_Reference/wp_head
+
 # Function
 - [ ] **title-tag:** ![alt text](img/high-label.svg "High") Theme support function to add `<title>` in `wp_head()`
 ```php

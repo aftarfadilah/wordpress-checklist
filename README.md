@@ -44,9 +44,29 @@ add_theme_support( 'post-thumbnails' );
 ```
 > * :book: https://codex.wordpress.org/Post_Thumbnails
 
+- [ ] **register_nav_menu($args):** ![alt text](img/high-label.svg "High") Add a menu location to the back-end
+```php
+function register_menus() {
+  register_nav_menus(
+    array(
+      'primary-menu' => __( 'Primary Menu' ),
+      'footer-menu' => __( 'Footer Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_menus' );
+```
+> * :book: https://codex.wordpress.org/Navigation_Menus
+
 # Body
 - [ ] **body_class():** ![alt text](img/high-label.svg "High") Add class at `<body>` tag at corresponding pages / posts
 ```php
 <body <?php body_class(); ?> >
 ```
 > * :book: https://developer.wordpress.org/reference/functions/body_class/
+
+- [ ] **wp_nav_menu($args):** ![alt text](img/high-label.svg "High") Add a menu location to the front-end
+```php
+wp_nav_menu( array('theme_location' => 'primary-menu') );
+```
+> * :book: https://codex.wordpress.org/Navigation_Menus

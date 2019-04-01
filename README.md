@@ -5,7 +5,7 @@ My Personal Wordpress Theme Development Checklist
 # Table of Content
 1. [Head](#head)
 2. [Function](#function)
-3. ~~[Body]()~~ *Coming Soon*
+3. [Body](#body)
 4. ~~[Footer]()~~ *Coming Soon*
 5. ~~[Plug-ins]()~~ *Coming Soon*
 
@@ -43,3 +43,10 @@ add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' ); 
 ```
 > * :book: https://codex.wordpress.org/Post_Thumbnails
+
+# Body
+- [ ] **body_class():** ![alt text](img/high-label.svg "High") Add class at `<body>` tag at corresponding pages / posts
+```php
+<body <?php body_class(); ?> >
+```
+> * :book: https://developer.wordpress.org/reference/functions/body_class/

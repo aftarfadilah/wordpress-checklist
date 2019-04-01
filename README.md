@@ -38,11 +38,11 @@ add_theme_support( 'title-tag' );
 ```
 > * :book: https://codex.wordpress.org/Title_Tag
 
-- [ ] **featured-thumbnail:** ![alt text](img/medium-label.svg "Medium") Theme support function to add post thumbnail
+- [ ]  **custom-logo:** ![alt text](img/high-label.svg "High") Add custom logo option in theme customization
 ```php
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'custom-logo' );
 ```
-> * :book: https://codex.wordpress.org/Post_Thumbnails
+> * :book: https://codex.wordpress.org/Theme_Logo
 
 - [ ] **register_nav_menu($args):** ![alt text](img/high-label.svg "High") Add a menu location to the back-end
 ```php
@@ -58,6 +58,12 @@ add_action( 'init', 'register_menus' );
 ```
 > * :book: https://codex.wordpress.org/Navigation_Menus
 
+- [ ] **featured-thumbnail:** ![alt text](img/medium-label.svg "Medium") Theme support function to add post thumbnail
+```php
+add_theme_support( 'post-thumbnails' ); 
+```
+> * :book: https://codex.wordpress.org/Post_Thumbnails
+
 # Body
 - [ ] **body_class():** ![alt text](img/high-label.svg "High") Add class at `<body>` tag at corresponding pages / posts
 ```php
@@ -70,3 +76,15 @@ add_action( 'init', 'register_menus' );
 wp_nav_menu( array('theme_location' => 'primary-menu') );
 ```
 > * :book: https://codex.wordpress.org/Navigation_Menus
+
+- [ ] **Custom Logo:** ![alt text](img/high-label.svg "High") Display custom logo from theme customization
+```php
+$custom_logo_id = get_theme_mod( 'custom_logo' );
+$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+if ( has_custom_logo() ) {
+  echo '<img src="' . esc_url( $logo[0] ) . '"' . 'alt="' . get_bloginfo( 'name' ) . '">';
+} else {
+  echo '<h1>;'. get_bloginfo( 'name' ) .'</h1>';
+}
+```
+> * :book: https://developer.wordpress.org/themes/functionality/custom-logo/

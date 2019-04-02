@@ -38,6 +38,12 @@ add_theme_support( 'title-tag' );
 ```
 > * :book: https://codex.wordpress.org/Title_Tag
 
+- [ ] **Disable admin bar:** ![alt text](img/medium-label.svg "Medium") Disable the wordpress admin bar when development
+```php
+show_admin_bar('false');
+```
+> * :book: https://codex.wordpress.org/Function_Reference/show_admin_bar
+
 - [ ]  **custom-logo:** ![alt text](img/high-label.svg "High") Add custom logo option in theme customization
 ```php
 add_theme_support( 'custom-logo' );
@@ -50,7 +56,7 @@ function register_menus() {
   register_nav_menus(
     array(
       'primary-menu' => __( 'Primary Menu' ),
-      'footer-menu' => __( 'Footer Menu' )
+      'footer-menu' => __( 'Footer Menu' ),
     )
   );
 }
@@ -60,7 +66,7 @@ add_action( 'init', 'register_menus' );
 
 - [ ] **featured-thumbnail:** ![alt text](img/medium-label.svg "Medium") Theme support function to add post thumbnail
 ```php
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 ```
 > * :book: https://codex.wordpress.org/Post_Thumbnails
 
